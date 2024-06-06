@@ -7,6 +7,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.static('public'))
 
 //Middlewares
+app.use(express.json())
 
 //Routes
 app.use('/', routes)
